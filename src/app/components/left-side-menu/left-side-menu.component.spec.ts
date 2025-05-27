@@ -8,10 +8,9 @@ describe('LeftSideMenuComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LeftSideMenuComponent]
-    })
-    .compileComponents();
-    
+      imports: [LeftSideMenuComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(LeftSideMenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
