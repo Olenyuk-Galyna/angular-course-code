@@ -15,7 +15,6 @@ import { MatDialog } from '@angular/material/dialog';
   styleUrl: './user-panel.component.scss',
 })
 export class UserPanelComponent {
-  // user$ = of({ firstName: 'Antony', lastName: 'Fox' });
   user$: Observable<{ firstName: string; lastName: string }> = of();
 
   constructor(private dialog: MatDialog) {}

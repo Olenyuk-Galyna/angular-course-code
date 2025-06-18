@@ -57,11 +57,17 @@ export class CategoryComponent implements OnInit, OnDestroy {
     this.destroy$.complete();
   }
 
-  deleteAnswer(categoryName: string, id: number): void {
+  deleteAnswer(id: number): void {
     this.categoriesService
-      .deleteCategoryQuestionById(categoryName, id)
+      .deleteCategoryQuestionById(id)
+      .pipe(
+        switchMap(() =>
+          this.categoriesService.getQuestionsByCategory(this.category)
+        )
+      )
       .subscribe((response) => {
         console.log(response);
+        this.dataSource = response.data as any;
       });
   }
 
@@ -74,7 +80,7 @@ export class CategoryComponent implements OnInit, OnDestroy {
       console.log('The dialog was closed', result);
       if (result) {
         console.log('Question would be deleted.', question);
-        this.deleteAnswer(this.category, question.id);
+        this.deleteAnswer(question.id);
       }
     });
   }
