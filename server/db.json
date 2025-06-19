@@ -9,14 +9,14 @@
     },
     {
       "email": "galaibidag@gmail.com",
-      "password": "123456",
+      "password": "userpassword",
       "firstName": "Galyna",
       "lastName": "Galaibida",
-      "id": 1
+      "id": 2
     },
     {
       "email": "testuser@gmail.com",
-      "password": "123456",
+      "password": "userpassword",
       "firstName": "testuser",
       "lastName": "lasttest",
       "id": 3
