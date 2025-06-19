@@ -6,6 +6,20 @@
       "firstName": "Test",
       "lastName": "Art",
       "id": 1
+    },
+    {
+      "email": "galaibidag@gmail.com",
+      "password": "123456",
+      "firstName": "Galyna",
+      "lastName": "Galaibida",
+      "id": 1
+    },
+    {
+      "email": "testuser@gmail.com",
+      "password": "123456",
+      "firstName": "testuser",
+      "lastName": "lasttest",
+      "id": 3
     }
   ],
   "categories": [
